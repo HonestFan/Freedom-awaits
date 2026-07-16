@@ -1,0 +1,1 @@
+Add your car image as images/car.jpg and your song as music/song.mp3 then deploy to GitHub Pages.
