@@ -1,58 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:url("images/Car.jpeg") center center/contain no-repeat;
-background-color:#000;
-height:100vh;
-display:grid;
-place-items:center;
+    font-family:Arial,Helvetica,sans-serif;
+    height:100vh;
+
+    background:url("images/Car.jpeg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
 }
 
 .overlay{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.35);
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.18);
 }
 
 .card{
-position:relative;
-z-index:1;
-background:rgba(255,255,255,.2);
-backdrop-filter:blur(10px);
-padding:2rem;
-border-radius:18px;
-text-align:center;
-color:#fff;
-max-width:700px;
+    position:relative;
+    z-index:1;
+
+    width:760px;
+    max-width:90%;
+
+    padding:45px;
+
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:24px;
+
+    text-align:center;
+    color:#fff;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.sub{
+    opacity:.9;
+    margin-bottom:8px;
+}
+
+.quote{
+    opacity:.85;
+    margin-bottom:35px;
+    line-height:1.6;
 }
 
 .timer{
-display:flex;
-gap:1rem;
-justify-content:center;
-flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-bottom:35px;
+    flex-wrap:wrap;
 }
 
-.timer div{
-background:rgba(255,255,255,.15);
-padding:1rem;
-border-radius:12px;
-min-width:90px;
-}
-
-span{
-font-size:2rem;
-font-weight:bold;
-display:block;
-}
-
-.sub,.quote{
-opacity:.9;
-}
-
-button{
-margin-top:1rem;
-padding:.7rem 1.2rem;
-border:none;
-border-radius:8px;
-}
+.box{
+    width:
