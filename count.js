@@ -16,8 +16,8 @@ function updateCountdown(){
     }
 
     if(monthsLeft <= 0){
-        document.querySelector(".timer").style.display="none";
-        done.innerHTML="🎉 Freedom!";
+        months.textContent = "00";
+        done.innerHTML = "🎉 Freedom!";
         clearInterval(timer);
         return;
     }
@@ -29,17 +29,17 @@ updateCountdown();
 
 const timer = setInterval(updateCountdown,1000);
 
-const musicBtn=document.getElementById("musicBtn");
-const audio=document.getElementById("audio");
+const musicBtn = document.getElementById("musicBtn");
+const audio = document.getElementById("audio");
 
-musicBtn.addEventListener("click",()=>{
+musicBtn.addEventListener("click", () => {
 
     if(audio.paused){
         audio.play();
-        musicBtn.textContent="⏸ Pause Music";
+        musicBtn.textContent = "⏸ Pause Music";
     }else{
         audio.pause();
-        musicBtn.textContent="▶ Play Music";
+        musicBtn.textContent = "▶ Play Music";
     }
 
 });
